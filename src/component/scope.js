@@ -16,10 +16,10 @@ const ScopeItem = memo(function ({ cacheId, updater, children, status, dispatch,
     const currentDOM = useRef()
     const renderChildren = status === ACTION_ACTIVE || status === ACTION_ACTIVED || status === ACITON_UNACTIVE || status === ACTION_UNACTIVED ? children : () => null
     const element = ReactDOM.createPortal(
-        <div ref={currentDOM} style={{ display: status === ACTION_UNACTIVED ? 'none' : 'block' }} >{
-            useMemo(() => renderChildren(), [updater])
-        }</div>, 
-    document.body
+        <div ref={currentDOM} style={{ display: status === ACTION_UNACTIVED ? 'none' : 'block' }} >
+            {   useMemo(() => renderChildren(), [updater])  }
+        </div>,
+        document.body
     )
     useEffect(() => {
         beforeScopeDestory[cacheId] = function () {

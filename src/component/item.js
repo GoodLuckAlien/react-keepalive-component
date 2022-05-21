@@ -6,6 +6,7 @@ import React, {
     useEffect,
     useLayoutEffect
 } from 'react'
+
 import keepaliveContext from '../core/keepContext'
 import {
     ACTION_UPDATE,
@@ -79,9 +80,7 @@ function KeepaliveItem({
             })
         }
     }, [])
-    return <div ref={parentNode}
-        style={style}
-           />
+    return <div ref={parentNode} style={style}/>
 }
 
 export default KeepaliveItem

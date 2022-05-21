@@ -1,0 +1,39 @@
+{
+  "name": "react-keepalive-component",
+  "version": "0.0.1-beta",
+  "description": "基于`react 16.8+` 开发的`react`缓存组件，可以用于缓存页面，组件，类似`vue`的`keepalive`包裹`component`的效果功能。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup --config"
+  },
+  "keywords": [
+    "keep alive",
+    "react",
+    "react alive item",
+    "react keep alive scope",
+    "react hooks"
+  ],
+  "homepage": "https://github.com/AlienZhaolin/react-keepalive-component",
+  "peerDependencies": {
+    "react": ">=16.8",
+    "react-dom": ">=16.8",
+    "invariant": ">=2"
+  },
+  "author": "alien",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-react": "^7.12.5",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "rollup": "^2.33.3",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-uglify": "^6.0.4"
+  },
+  "dependencies": {
+    "hoist-non-react-statics": "^3.3.2",
+    "invariant": "^2.2.4"
+  }
+}

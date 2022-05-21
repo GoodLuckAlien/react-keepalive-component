@@ -38,7 +38,6 @@ class Keepalive {
     destoryItem(payload){
         const index = this.cacheList.findIndex(item => item.cacheId === payload)
         if(index === -1 ) return
-        console.log(this.cacheList[index].status)
         if(this.cacheList[index].status === ACTION_UNACTIVED ){
              this.cacheList.splice(index,1)
         }
