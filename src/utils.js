@@ -9,7 +9,7 @@ export const ACTION_DESTORYED  = 'destoryed'     /* 摧毁缓存 */
 export const ACTION_CLEAR      = 'clear'        /* 清除缓存 */
 export const ACTION_UPDATE     = 'update'        /* 更新组件 */
 
-export const KEEPALIVE_ID = '__keepalve__'
+export const KEEPALIVE_ID = '__keepalive__'
 
 /**
  * 数据类型校验
