@@ -28,7 +28,7 @@ class Keepalive {
     }
     getKid() {
         this.kid++
-        return KEEPALIVE_ID + this.KID
+        return KEEPALIVE_ID + this.kid
     }
     hasAliveStatus (cacheId) {
         const index = this.cacheList.findIndex(item => item.cacheId === cacheId)
